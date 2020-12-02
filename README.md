@@ -13,7 +13,7 @@ This project is an extension of [Alexinea.FastMember](https://github.com/alexine
 
 In addition, we also recommend that you use [Leo](https://github.com/night-moon-studio/leo) based on [NCC Natasha](https://github.com/dotnetcore/Natasha), a high-performance object reading and writing component.
 
-## Install
+## Installing
 
 ```
 Install-Package Alexinea.FastMember.Extensions
