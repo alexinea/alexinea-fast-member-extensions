@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>Alexinea.FastMember.Extensions</AssemblyName>
+        <PackageId>Alexinea.FastMember.Extensions</PackageId>
+        <Description>Cosmos reflection extension library</Description>
+        <RootNamespace>Alexinea.FastMember</RootNamespace>
+        <LangVersion>latest</LangVersion>
+        <NoWarn>$(NoWarn);CS1591;NETSDK1138</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;netstandard2.1;netstandard2.0;net461;net451</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Description>An extension library for FastMember.</Description>
+        <PackageTags>Reflection;Dynamic;Member;Access</PackageTags>
+        <PackageProjectUrl>https://github.com/alexinea/alexinea-fast-member-extensions</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/alexinea/alexinea-fast-member-extensions</RepositoryUrl>
+        <Version>1.5.0</Version>
+        <Authors>AlexLEWIS</Authors>
+        <owners>AlexLEWIS</owners>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+        <PackageReference Include="FastMember" Version="1.3.0" />
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+        <PackageReference Include="Alexinea.FastMember" Version="1.5.0" />
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+    
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+        <PackageReference Include="Alexinea.FastMember" Version="1.5.0" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
+        <PackageReference Include="Alexinea.FastMember" Version="1.5.0" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+        <PackageReference Include="Alexinea.FastMember" Version="1.5.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="..\..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+        <None Include="..\..\logo.png" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>
