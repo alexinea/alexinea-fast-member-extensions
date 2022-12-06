@@ -33,7 +33,7 @@ namespace Alexinea.FastMember.Core
         private static void Clear(int clearNum)
         {
             var top100 = _indexOfCache.Where(pair => pair.Value < clearNum);
-#if NETFRAMEWORK || NETSTANDARD2_0
+#if NETFRAMEWORK
             foreach (var pair in top100)
             {
                 _indexOfCache.Remove(pair.Key);
